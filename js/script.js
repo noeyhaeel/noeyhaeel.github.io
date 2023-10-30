@@ -55,3 +55,24 @@ window.addEventListener("load", function () {
 
   ScrollTrigger.refresh();
 });
+
+
+
+const link = document.querySelectorAll(".hover_link");
+const animateit = function (e) {
+  const img = this.querySelector(".hover");
+  const { offsetX: x, offsetY: y } = e;
+  const { offsetWidth: width, offsetHeight: height } = this;
+  const move = 20;
+  const xMove = (x / width) * (move * 2) - move;
+  const yMove = (y / height) * (move * 2) - move;
+
+  img.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+  if (e.type === "mouseleave") {
+    img.style.transform = "";
+  }
+};
+
+link.forEach((t) => t.addEventListener("mousemove", animateit));
+link.forEach((t) => t.addEventListener("mouseleave", animateit));
