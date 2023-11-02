@@ -24,7 +24,7 @@
 
 body {font-family: pretendard, sans-serif; color: var(--text-color); background: var(--bg-color); transition: 0.3s ease-out; overflow-x: hidden; max-width: 100%; width: 100%; overscroll-behavior: none;}
 
-header {position: absolute; padding: 50px 10vw; display: flex; justify-content: space-between; width: 100%; z-index: 99;}
+header {position: fixed; top: 0; padding: 50px 10vw; display: flex; justify-content: space-between; width: 100%; z-index: 99;}
 header h3.logo {font-family: pretendard, sans-serif; font-size: 1.75rem; font-weight: 700;}
 header ul.nav {display: flex; align-items: center; gap: 4vh;}
 header ul.nav li a {color: var(--text-color); font-size: 1.125rem; opacity: .5; transition: 0.2s linear;}
