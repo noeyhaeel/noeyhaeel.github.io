@@ -26,15 +26,9 @@ ScrollTrigger.scrollerProxy(pageContainer, {
     pinType: pageContainer.style.transform ? "transform" : "fixed"
 });
 
-const box = document.querySelector("header");
-// ScrollTrigger.create({
-//     trigger: el,
-//     onToggle: self => self.isActive && gsap.to(box, {width: widths[i], duration: 3, overwrite: true, ease: "power1"}),
-//     start: "top 5%",
-//     end: "bottom 15%",
-//     markers: true
-// });
+
 window.addEventListener("load", function () {
+    let pinBoxes = document.querySelectorAll(".pin-wrap > *");
     let pinWrap = document.querySelector(".pin-wrap");
     let pinWrapWidth = pinWrap.offsetWidth;
     let horizontalScrollLength = pinWrapWidth - window.innerWidth;

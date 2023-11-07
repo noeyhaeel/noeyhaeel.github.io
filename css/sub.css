@@ -12,7 +12,7 @@ section {padding: 50px 10vw;}
 .top_tit .link a:hover span {background: rgba(187, 187, 187, 0.226); transition: .3s;}
 .work {display: flex; flex-wrap: wrap; gap: 50px;}
 .work img {max-width: 70%; margin: 0 auto;}
-.btn {position: fixed; display: flex; align-items: center; justify-content: space-between; top: calc(50% - 80px); width: 100%;}
 .btn a {width: 80px; height: 80px; border: 1px solid #bbb; border-radius: 15px; background: none; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center;}
-.btn a.next {margin-left: auto;}
+.btn a.prev {position: fixed; top: calc(50% - 80px); left: 10vw;}
+.btn a.next {position: fixed; top: calc(50% - 80px); right: 10vw;}
 .btn a:hover {background: rgba(187, 187, 187, 0.226); transition: .3s;}
