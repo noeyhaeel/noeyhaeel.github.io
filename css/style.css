@@ -29,7 +29,14 @@
   --green: #6FB18A;
 }
 
+::-webkit-scrollbar {width: 6px; background: transparent;}
+::-webkit-scrollbar-thumb {border-radius: 50px; background: #333;}
+::-webkit-scrollbar-track {background: transparent;}
+
+html {scroll-behavior: smooth;}
 body {font-family: pretendard, sans-serif; color: var(--text-color); background: var(--bg-color); transition: 0.3s ease-out; overflow-x: hidden; max-width: 100%; width: 100%; overscroll-behavior: none;}
+
+
 
 header {position: fixed; top: 0; padding: 50px 10vw; display: flex; justify-content: space-between; width: 100%; z-index: 99; transform: translate(0, 0)!important;}
 header h3.logo {font-family: pretendard, sans-serif; font-size: 1.75rem; font-weight: 700;}
@@ -47,7 +54,7 @@ header ul.nav li a.on, header ul.nav li a:hover {opacity: 1; transition: 0.2s li
 .pin-wrap > a > img {height: 50vh; width: auto; object-fit: cover; pointer-events: none; transition: 0.2s linear; border-radius: 0;}
 .pin-wrap > a:hover > img {border-radius: 50%;}
 
-.blob_wrap {position: absolute; right: 5em; top: 50%; z-index: -1; height: 500px; width: 500px; opacity: .5;}
+.blob_wrap {position: fixed; right: 5em; top: 50%; z-index: -1; height: 500px; width: 500px; opacity: .5;}
 .blob {border-radius: 100px; filter: blur(60px); position: absolute;}
 .yellow {background-color: var(--yellow); top: 200px; left: 100px; height: 300px; width: 300px; animation: yellow 8s infinite ease;}
 .green {background-color: var(--green); top: 80px; right: -20px; height: 300px; width: 350px; animation: green 8s infinite ease;}
