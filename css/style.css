@@ -42,7 +42,12 @@ header {position: fixed; top: 0; padding: 50px 10vw; display: flex; justify-cont
 header h3.logo {font-family: pretendard, sans-serif; font-size: 1.75rem; font-weight: 700;}
 header h3.logo a {color: #fff;}
 header ul.nav {display: flex; align-items: center; gap: 4vh;}
-header ul.nav li a {color: var(--text-color); font-size: 1.125rem; opacity: .5; transition: 0.2s linear;}
+header ul.nav li a {color: var(--text-color); font-size: 1.125rem; opacity: .5; transition: .2s linear; position: relative; overflow: hidden; display: block; width: 50px; height: 18px;} 
+header ul.nav li a span {display: block; width: 100%; position: absolute; transition: .2s linear;}
+header ul.nav li a span.default {top: 0;}
+header ul.nav li a span.hover {top: 20px;}
+header ul.nav li a:hover span.default {top: -20px;}
+header ul.nav li a:hover span.hover {top: 0;}
 header ul.nav li a.on, header ul.nav li a:hover {opacity: 1; transition: 0.2s linear;}
 
 #sectionPin {height: 100vh; overflow: hidden; display: flex; left: 0;}
@@ -50,8 +55,8 @@ header ul.nav li a.on, header ul.nav li a:hover {opacity: 1; transition: 0.2s li
 .pin-wrap > a:first-child {margin-left: 0;}
 .pin-wrap > a:last-child {margin-right: 0;}
 .pin-wrap > a {margin: 0 4vh; position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2vh;}
-.pin-wrap > a .info {color: var(--text-color); display: flex; align-items: center; justify-content: space-between; width: 100%; font-size: .9375rem;}
-.pin-wrap > a > img {height: 50vh; width: auto; object-fit: cover; pointer-events: none; transition: 0.2s linear; border-radius: 0;}
+.pin-wrap > a .info {color: var(--text-color); display: flex; align-items: center; justify-content: space-between; width: 100%; font-size: 1rem;}
+.pin-wrap > a > img {height: 50vh; width: auto; object-fit: cover; pointer-events: none; transition: .2s linear; border-radius: 0;}
 .pin-wrap > a:hover > img {border-radius: 50%;}
 
 .blob_wrap {position: fixed; right: 5em; top: 50%; z-index: -1; height: 500px; width: 500px; opacity: .5;}
