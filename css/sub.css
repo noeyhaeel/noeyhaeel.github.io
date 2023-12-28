@@ -6,7 +6,7 @@ section {padding: 5vw 10vw;}
 .top_tit h2 {width: 100%; font-size: 3rem; text-align: center; font-weight: 700;}
 .top_tit span {font-size: 1.5rem; text-align: center; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
 .top_tit .cate {display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px;}
-.top_tit .cate li {padding: 5px 10px; border: 1px solid var(--text-color2); color: var(--text-color2); border-radius: 50px; font-size: .8125rem; letter-spacing: .05rem;}
+.top_tit .cate li {padding: 5px 10px; border: 1px solid var(--text-color2); color: var(--text-color2); border-radius: 50px; font-size: .9375rem; letter-spacing: .05rem;}
 .top_tit .link {position: absolute; left: calc(50% - 60px); bottom: 50px;}
 .top_tit .link a span {display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border: 1px solid var(--border-color); border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
 .top_tit .link a span svg path,

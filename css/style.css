@@ -34,7 +34,7 @@
   --border-color: #bbb;
   --border-bg-color: rgba(187, 187, 187, 0.226);
   --bg-color: #fffdf3;
-  --blob-color: #246132;
+  --point-color: #246132;
 }
 
 ::-webkit-scrollbar {width: 6px; background: transparent;}
@@ -56,23 +56,32 @@ header ul.nav li a span.hover {top: 20px;}
 header ul.nav li a.on {opacity: 1; transition: 0.2s linear;}
 
 
-#work {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 5vw 10vw; gap: 5vw 10vw;}
-#work > a {width: calc(100% / 2 - 5vw); position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
-#work > a:nth-child(2n + 1) {margin-top: 120px;}
-#work > a .info {display: flex; align-items: center; justify-content: space-between; width: 100%; padding-bottom: 1vw; margin-bottom: 1vw; border-bottom: 1px solid var(--text-color);}
-#work > a .info li.tit {font-size: 1.5rem; color: var(--text-color);}
-#work > a .info li.date {font-size: 1rem; color: var(--text-color);}
+section {display: flex; flex-wrap: wrap; align-items: center; padding: 5vw 10vw; gap: 36px;}
+#work > a {width: calc(100% / 4 - 27px); position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+#work > a .info {display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; width: 100%; padding-bottom: 1vw; margin-bottom: 1vw; border-bottom: 1px solid var(--text-color);}
+#work > a .info li.tit {font-size: 1.25rem; font-weight: 500; color: var(--text-color);}
+#work > a .info li.cate {color: var(--point-color); font-size: .9375rem; display: block;}
 #work > a > img {width: 100%; height: 100%; object-fit: cover; pointer-events: none; transition: .2s linear; border-radius: 0;}
 
 
+section .box {width: 100%;}
+section .box + .box {margin-top: 20px;}
+section .box h4.tit {font-size: 1.25rem; font-weight: 600; color: var(--text-color); margin-bottom: 20px;}
+section .box span {font-size: 1rem; color: var(--text-color); line-height: 1.5;}
+section .box .experience {display: flex; flex-wrap: wrap; gap: 30px 0;}
+section .box .experience li {width: 100%; display: flex; align-items: flex-start; font-size: 1rem; font-weight: 400;}
+section .box .experience li span.date {width: 100%; max-width: 200px; display: flex; flex-wrap: wrap; align-items: center; font-size: 1.0625rem; font-weight: 500;}
+section .box .experience li span.date small {width: 100%; font-size: .875rem; font-weight: 400; color: var(--text-color2);}
+
+
 .blob_wrap {position: fixed; right: 8em; top: 60%; z-index: -1; height: 500px; width: 500px; opacity: .5;}
-.blob {border-radius: 100%; filter: blur(60px); position: absolute; background-color: var(--blob-color); top: 200px; left: 100px; height: 100%; width: 100%; animation: moveInfinite 8s infinite ease;}
+.blob {border-radius: 100%; filter: blur(60px); position: absolute; background-color: var(--point-color); height: 100%; width: 100%; animation: moveInfinite 8s infinite ease;}
 
 @keyframes moveInfinite {
-  0% {top: 300px; left: 200px; transform: scale(1); border-radius: 100%;}
-  30% {top: 400px; left: 250px; transform: scale(1.2); border-radius: 60%;}
-  60% {top: 200px; left: 300px; transform: scale(1.3); border-radius: 80%;}
-  100% {top: 300px; left: 200px; transform: scale(1); border-radius: 100%;}
+  0% {top: 50px; left: 50px; transform: scale(1); border-radius: 100%;}
+  30% {top: 180px; left: 150px; transform: scale(1.2); border-radius: 60%;}
+  60% {top: 150px; left: 180px; transform: scale(1.3); border-radius: 80%;}
+  100% {top: 50px; left: 50px; transform: scale(1); border-radius: 100%;}
 }
 
 @media (hover: hover) {
@@ -84,17 +93,20 @@ header ul.nav li a.on {opacity: 1; transition: 0.2s linear;}
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
+  section {margin-top: 5vw;}
+  #work > a {width: calc(100% / 3 - 24px);}
+}
+
+
+@media (max-width: 1420px) {
   html, body {font-size: 80%;}
 
-  #work {gap: 5vw 5vw; margin-top: 5vw;}
-  #work > a {width: calc(100% / 2 - 2.5vw);}
-  #work > a:nth-child(2n + 1) {margin-top: 0;}
+  #work > a {width: calc(100% / 2 - 18px);}
 }
 
 
 @media (max-width: 768px) {
-  #work {gap: 10vw;}
   #work > a {width: 100%;}
 }
 
