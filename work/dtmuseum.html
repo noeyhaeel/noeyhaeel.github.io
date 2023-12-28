@@ -21,8 +21,8 @@
     <header>
         <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
         <ul class="nav">
-            <li><a href="/index.html" class="on">work</a></li>
-            <li><a href="/about.html">about</a></li>
+            <li><a href="/index.html" class="on"><span class="default">work</span><span class="hover">work</span></a></li>
+            <li><a href="/about.html"><span class="default">about</span><span class="hover">about</span></a></li>
         </ul>
     </header>
     <div class="container">
@@ -30,10 +30,10 @@
             <h2>대구섬유박물관</h2>
             <span>Daegu Textile Museum</span>
             <ul class="cate">
-                <li>#반응형</li>
-                <li>#기획 100%</li>
-                <li>#디자인 100%</li>
-                <li>#퍼블리싱 100%</li>
+                <li># 반응형</li>
+                <li># 기획 100%</li>
+                <li># 디자인 100%</li>
+                <li># 퍼블리싱 100%</li>
             </ul>
             <div class="link">
                 <a href="https://www.dtmuseum.org/main" target="_blank" title="홈페이지 새 창 이동" class="hover_link">
@@ -42,29 +42,26 @@
                     </span>
                 </a>
             </div>
-    
-            <div class="blob_wrap">
-                <div class="yellow blob"></div>
-                <div class="red blob"></div>
-                <div class="green blob"></div>
-            </div>
         </section>
         <section class="work">
             <img src="/img/dtmuseum/01.jpg" alt="대구섬유박물관 메인페이지">
             <img src="/img/dtmuseum/02.jpg" alt="대구섬유박물관 서브페이지">
         </section>
     </div>
-    <section class="btn">
+
+    <div class="blob_wrap">
+        <div class="blob"></div>
+    </div>
+
+    <div class="btn" id="pageBtn">
         <!-- <a href="javascript:history.back();" class="prev" title="뒤로가기">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z" fill="#fffbdf"></path></svg>
         </a> -->
         <a href="/work/dgfca.html" class="next" title="대구문화예술진흥원">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#fffbdf"></path></svg>
         </a>
-    </section>
+    </div>
 
-    <script src="/js/scrolltrigger.min.js"></script>
-    <script src="/js/gsap.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>

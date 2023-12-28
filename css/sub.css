@@ -1,18 +1,38 @@
 @charset "utf-8";
 
-section {padding: 50px 10vw;}
+section {padding: 5vw 10vw;}
 
-.top_tit {height: 100vh; display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; gap: 20px; position: relative; transform: translate(0, 0);}
+.top_tit {height: 85vh; display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; gap: 20px; position: relative; transform: translate(0, 0);}
 .top_tit h2 {width: 100%; font-size: 3rem; text-align: center; font-weight: 700;}
 .top_tit span {font-size: 1.5rem; text-align: center; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
 .top_tit .cate {display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px;}
-.top_tit .cate li {padding: 5px 10px; border: 1px solid #bbb; color: #bbb; border-radius: 50px; font-size: .8125rem;}
+.top_tit .cate li {padding: 5px 10px; border: 1px solid var(--text-color2); color: var(--text-color2); border-radius: 50px; font-size: .8125rem; letter-spacing: .05rem;}
 .top_tit .link {position: absolute; left: calc(50% - 60px); bottom: 50px;}
-.top_tit .link a span {display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border: 1px solid #bbb; border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
-.top_tit .link a:hover span {background: rgba(187, 187, 187, 0.226); transition: .3s;}
-.work {display: flex; flex-wrap: wrap; gap: 50px;}
-.work img {max-width: 70%; margin: 0 auto;}
-.btn a {width: 80px; height: 80px; border: 1px solid #bbb; border-radius: 15px; background: none; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center;}
+.top_tit .link a span {display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border: 1px solid var(--border-color); border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
+.top_tit .link a span svg path,
+.btn a svg path {fill: var(--text-color2);}
+.work {display: flex; flex-wrap: wrap; gap: 50px; z-index: 98; position: relative;}
+.work img {max-width: 1200px; width: 100%; margin: 0 auto;}
+.btn {opacity: 0; transition: .1s; position: relative; z-index: 99;}
+.btn.on {opacity: 1;}
+.btn a {width: 80px; height: 80px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 15px; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center;}
 .btn a.prev {position: fixed; top: calc(50% - 80px); left: 10vw;}
 .btn a.next {position: fixed; top: calc(50% - 80px); right: 10vw;}
-.btn a:hover {background: rgba(187, 187, 187, 0.226); transition: .3s;}
+
+
+@media (hover: hover) {
+    .top_tit .link a:hover span,
+    .btn a:hover {background: var(--border-bg-color); transition: .3s;}
+}
+
+
+@media (max-width: 768px) {
+    .top_tit .cate {flex-wrap: wrap;}
+    .top_tit .cate li {font-size: 1.125rem;}
+    .top_tit .link {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; left: inherit; bottom: inherit; margin-top: 20vw;}
+    .top_tit .link a span {width: 70px; height: 70px; transform: translate(0,0)!important;}
+
+    .btn a {z-index: 99; width: 40px; height: 40px; border-radius: 50%;}
+    .btn a.prev {left: 3vw;}
+    .btn a.next {right: 3vw;}
+}
