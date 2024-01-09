@@ -12,7 +12,7 @@ section {padding: 5vw 10vw;}
 .top_tit .link a span svg path,
 .btn a svg path {fill: var(--text-color2);}
 .work {display: flex; flex-wrap: wrap; gap: 50px; z-index: 98; position: relative;}
-.work img {max-width: 1200px; width: 100%; margin: 0 auto;}
+.work img {max-width: 1200px; width: 100%; margin: 0 auto; border-radius :10px;}
 .btn {opacity: 0; transition: .1s; position: relative; z-index: 99;}
 .btn.on {opacity: 1;}
 .btn a {width: 80px; height: 80px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 15px; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center;}
