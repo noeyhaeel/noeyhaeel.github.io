@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+:root {
+    --bg-color: #212225;
+    --bg-color2: rgba(84,86,95,0.4);
+    --border-color: #7f7f7f;
+    --color: #fdfdff;
+    --point-color: #4d76ff;
+}
+
+.switch__slider::before {transform: translate(1.6rem, -50%);}
