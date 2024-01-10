@@ -18,18 +18,18 @@
     <link rel="stylesheet" href="/css/light-mode.css" id="css-link">
 </head>
 <body>
-    <header>
-        <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
-        <ul class="nav">
-            <li><a href="/index.html"><span class="default">work</span><span class="hover">work</span></a></li>
-            <li><a href="/about.html" class="on"><span class="default">about</span><span class="hover">about</span></a></li>
-        </ul>
-        <label class="switch">
-            <input class="switch__input" type="checkbox">
-            <span class="switch__slider" onclick="changeMode();"></span>
-        </label>
-    </header>
     <div class="container">
+        <header>
+            <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
+            <ul class="nav">
+                <li><a href="/index.html"><span class="default">work</span><span class="hover">work</span></a></li>
+                <li><a href="/about.html" class="on"><span class="default">about</span><span class="hover">about</span></a></li>
+            </ul>
+            <label class="switch">
+                <input class="switch__input" type="checkbox">
+                <span class="switch__slider" onclick="changeMode();"></span>
+            </label>
+        </header>
         <section>
             <div class="box">
                 <h4 class="tit">🖐Hello</h4>
@@ -75,10 +75,13 @@
                 </ul>
             </div>
         </section>
+
+        <div class="blob_wrap">
+            <div class="blob"></div>
+        </div>
     </div>
-    <div class="blob_wrap">
-        <div class="blob"></div>
-    </div>
+
+    <div class="overlay"></div>
 
     <script src="/js/script.js"></script>
 </body>

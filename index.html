@@ -20,19 +20,21 @@
 </head>
 
 <body>
-    <header>
-        <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
-        <ul class="nav">
-            <li><a href="/index.html" class="on"><span class="default">work</span><span class="hover">work</span></a>
-            </li>
-            <li><a href="/about.html"><span class="default">about</span><span class="hover">about</span></a></li>
-        </ul>
-        <label class="switch">
-            <input class="switch__input" type="checkbox">
-            <span class="switch__slider" onclick="changeMode();"></span>
-        </label>
-    </header>
     <div class="container">
+
+        <header>
+            <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
+            <ul class="nav">
+                <li><a href="/index.html" class="on"><span class="default">work</span><span
+                            class="hover">work</span></a>
+                </li>
+                <li><a href="/about.html"><span class="default">about</span><span class="hover">about</span></a></li>
+            </ul>
+            <label class="switch">
+                <input class="switch__input" type="checkbox">
+                <span class="switch__slider" onclick="changeMode();"></span>
+            </label>
+        </header>
         <section id="work">
             <a href="/work/dtmuseum.html" class="hover_link">
                 <ul class="info">
@@ -41,7 +43,7 @@
                 </ul>
                 <img src="/img/thum01.jpg" alt="대구섬유박물관" class="hover">
             </a>
-            <!-- <a href="/work/dgfca.html" class="hover_link">
+                    <!-- <a href="/work/dgfca.html" class="hover_link">
                 <ul class="info">
                     <li class="tit">대구문화예술진흥원</li>
                     <li class="cate">반응형 웹사이트</li>
@@ -63,13 +65,14 @@
                 <img src="/img/thum04.jpg" alt="칠성피엘아이" class="hover">
             </a> -->
         </section>
+
+        <div class="blob_wrap">
+            <div class="blob"></div>
+        </div>
     </div>
 
-    <div class="blob_wrap">
-        <div class="blob"></div>
-    </div>
+    <div class="overlay"></div>
 
     <script src="/js/script.js"></script>
 </body>
-
 </html>
