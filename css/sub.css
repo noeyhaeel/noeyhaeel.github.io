@@ -3,13 +3,13 @@
 section {padding: 5vw 10vw;}
 
 section {height: 85vh; display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; gap: 20px; position: relative; transform: translate(0, 0);}
-.content {display: flex; gap: 36px; padding: 0 160px;}
+.content {display: flex; flex-wrap: wrap; gap: 36px; padding: 0 10vw;}
 .content li.thum {width: 40%;}
 .content li.thum img {width: 100%; border-radius: 15px;}
-.content li.info {width: calc(60% - 18px); text-align: left; position: relative;}
-.content li.info h2 {width: 100%; font-size: 3rem; font-weight: 700; padding-top: 8vh;}
-.content li.info span {font-size: 1.5rem; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%; margin-top: 2vh;}
-.content li.info .link {position: absolute; left: 0; bottom: 8vh;}
+.content li.info {width: calc(60% - 18px); text-align: left; position: relative; display: flex; flex-wrap: wrap; align-content: center; gap: 18px;}
+.content li.info h2 {width: 100%; font-size: 3rem; font-weight: 700;}
+.content li.info span {font-size: 1.5rem; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
+.content li.info .link {margin-top: 18px;}
 .content li.info .link a span {display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border: 1px solid var(--border-color); border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
 .content li.info .link a span::before {content: ""; background: transparent; width: 100%; height: 100%; border-radius: 100%; position: absolute; left: 0; top: 0; z-index: -1;}
 .content li.info .link a span svg path,
@@ -22,19 +22,28 @@ section {height: 85vh; display: flex; flex-wrap: wrap; align-items: center; alig
 .btn a.prev {position: absolute; top: calc(50% - 80px); left: 10vw;}
 .btn a.next {position: absolute; top: calc(50% - 80px); right: 10vw;}
 
+.cate {width: 100%; display: flex; gap: 18px; align-items: center; margin-top: 18px;}
+.cate li {color: var(--point-color); font-size: .9375rem; font-weight: 300;}
+
+
 
 @media (hover: hover) {
     .content li.info .link a:hover span::before,
     .btn a:hover::before {background: var(--bg-color2); transition: .2s;}
 }
 
-@media (max-width: 768px) {
-    .top_tit .cate {flex-wrap: wrap;}
-    .top_tit .cate li {font-size: 1.125rem;}
-    .top_tit .link {position: relative; width: 100%; display: flex; align-items: center; justify-content: center; left: inherit; bottom: inherit; margin-top: 20vw;}
-    .top_tit .link a span {width: 70px; height: 70px; transform: translate(0,0)!important;}
-
-    .btn a {z-index: 99; width: 40px; height: 40px; border-radius: 50%;}
+@media (max-width: 1200px) {
+    .content li.thum,
+    .content li.info {width: 100%; text-align: center;}
+    .cate,
+    .content li.info {justify-content: center;}
+    .btn a {z-index: 99; width: 60px; height: 60px; border-radius: 10px;}
     .btn a.prev {left: 3vw;}
     .btn a.next {right: 3vw;}
+}
+
+@media (max-width: 768px) {
+    .content {padding: 0;}
+    .content li.info .link a span {width: 60px; height: 60px;}
+
 }
