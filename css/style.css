@@ -58,7 +58,7 @@ header ul.nav li a.on {opacity: 1; transition: 0.2s linear;}
 .switch__slider::before {content: ""; position: absolute; left: 0.4rem; top: 50%;  transform: translateY(-50%); height: 1.3rem; width: 1.3rem; border-radius: 50%; background: var(--point-color);}
 
 
-section {display: flex; flex-wrap: wrap; align-items: center; padding: 5vw 10vw; gap: 36px; position: relative;}
+section {display: flex; flex-wrap: wrap; align-items: center; padding: 5vw 10vw; gap: 36px; position: relative; min-height: calc(100vh - 33px - 5vw);}
 #work > a {width: calc(100% / 4 - 27px); position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
 #work > a .info {display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; width: 100%; padding-bottom: 1vw; margin-bottom: 1vw; border-bottom: 1px solid var(--border-color);}
 #work > a .info li.tit {font-size: 1.25rem; font-weight: 500; color: var(--color);}

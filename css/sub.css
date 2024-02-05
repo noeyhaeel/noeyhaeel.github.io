@@ -6,7 +6,7 @@ section {height: 85vh; display: flex; flex-wrap: wrap; align-items: center; alig
 .content {display: flex; flex-wrap: wrap; gap: 36px; padding: 0 10vw;}
 .content li.thum {width: 40%;}
 .content li.thum img {width: 100%; border-radius: 15px;}
-.content li.info {width: calc(60% - 18px); text-align: left; position: relative; display: flex; flex-wrap: wrap; align-content: center; gap: 18px;}
+.content li.info {width: calc(60% - 36px); text-align: left; position: relative; display: flex; flex-wrap: wrap; align-content: center; gap: 18px;}
 .content li.info h2 {width: 100%; font-size: 3rem; font-weight: 700;}
 .content li.info span {font-size: 1.5rem; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
 .content li.info .link {margin-top: 18px;}
