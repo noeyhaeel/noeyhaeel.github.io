@@ -120,6 +120,8 @@ section .box .experience li span.date small {width: 100%; font-size: .875rem; fo
 
 
 @media (max-width: 768px) {
+  header {padding: 5vw 10vw;}
+
   #work > a {width: 100%;}
 }
 
