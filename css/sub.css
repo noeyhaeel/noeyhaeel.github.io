@@ -1,62 +1,63 @@
 @charset "utf-8";
 
-section {padding: 5vw 10vw;}
-
-.content {display: flex; flex-wrap: wrap; gap: 36px; padding: 0 10vw;}
-.content > li {width: calc(50% - 18px);}
-.content li.thum img {width: 100%; border-radius: 15px;}
-.content li.info { text-align: left; position: relative; display: flex; flex-wrap: wrap; align-content: center; gap: 18px;}
-.content li.info h2 {width: 100%; font-size: 3rem; font-weight: 700;}
-.content li.info span {font-size: 1.5rem; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
-.content li.info .link {margin-top: 18px;}
-.content li.info .link a span {display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; border: 1px solid var(--border-color); border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
-.content li.info .link a span::before {content: ""; background: transparent; width: 100%; height: 100%; border-radius: 100%; position: absolute; left: 0; top: 0; z-index: -1;}
-.content li.info .link a span svg path {fill: var(--color);}
-.content li.info .cate {width: 100%; display: flex; gap: 18px; align-items: center; margin-top: 18px;}
-.content li.info .cate li {color: var(--point-color); font-size: .9375rem; font-weight: 300;}
+main {padding: 10vw 10vw 0; display: flex; align-items: center; justify-content: center; gap: 36px; text-align: center; flex-wrap: wrap;}
+main .tit {width: 100%; text-align: center; display: flex; gap: 18px; flex-wrap: wrap;}
+main .tit h3 {width: 100%; font-size: 3rem; font-weight: 700;}
+main .tit span {font-size: 1.5rem; font-weight: 300; letter-spacing: .1rem; display: block; width: 100%;}
+main .link {position: relative; height: 100px;}
+main .link a span {display: flex; align-items: center; justify-content: center; width: 70px; height: 70px; border: 1px solid var(--border-color); border-radius: 100%; font-size: 1rem; color: #555; font-weight: 700; line-height: 1.2; letter-spacing: 0; transition: .3s;}
+main .link a span::before {content: ""; background: var(--bg-color); width: 100%; height: 100%; border-radius: 100%; position: absolute; left: 0; top: 0; z-index: -1;}
+main .link a span svg path {fill: var(--color);}
+main .cate {width: 100%; display: flex; gap: 9px; align-items: center; justify-content: center;}
+main .cate li {color: var(--point-color); font-size: .75rem; font-weight: 400; padding: 4px 10px; border: 1px solid var(--point-color); background: var(--bg-color); border-radius: 50px; opacity: .8;}
 
 
-.img {padding: 0 10vw;}
-.img img {width: 100%;}
+.desc {padding: 5vw 10vw; display: flex; flex-wrap: wrap; gap: 50px; width: 100%; max-width: 1200px; margin: 0 auto;}
+.desc > * {width: 100%;}
+.desc .img ul {display: flex; flex-wrap: wrap; gap: 50px;}
+.desc .img ul li img {max-width: 100%;}
+.desc h4 {font-size: 1.25rem; color: var(--color); font-weight: 600; margin-bottom: 18px;}
+.desc .txt ul {display: flex; gap: 18px; background: var(--bg-color3); width: 100%; border-radius: 4px; padding: 1vw 2vw;}
+.desc .txt ul li {color: var(--color); font-size: .9375rem; font-weight: 500;}
 
 
-.btn {transition: .1s; z-index: 99; position: relative; opacity: 0; animation: opacity2 .8s ease forwards; animation-delay: .4s;}
-.btn a {width: 80px; height: 80px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 15px; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center; position: relative;}
+.btn {transition: .4s; opacity: 0;}
+.btn a.home {position: fixed; bottom: 3vw; left: 10vw; z-index: 5;}
+.btn a.scrolltop {position: fixed; bottom: 3vw; right: 10vw; z-index: 5;}
+.btn a {width: 70px; height: 70px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 50%; cursor: pointer; transition: .3s; display: flex; align-items: center; justify-content: center; position: relative; transition: .3s;}
 .btn a::before {content: ""; background: transparent; width: 100%; height: 100%; border-radius: 15px; position: absolute; left: 0; top: 0; z-index: 0;}
 .btn a svg {z-index: 1;}
 .btn a svg path {fill: var(--color);}
-.btn a.prev {position: fixed; top: calc(50% - 40px); left: 10vw;}
-.btn a.next {position: fixed; top: calc(50% - 40px); right: 10vw;}
 
-@keyframes opacity2 {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+
+.loop_wrap {display: flex; width: 100%; height: 100vh; display: flex; align-items: center; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0;}
+.loop_wrap .txt {color: var(--bg-color2); flex: 0 0 auto; white-space: nowrap; font-size: 20rem; font-weight: 900; letter-spacing: 0.03em; opacity: .4;}
+.loop_wrap .txt:nth-child(odd) {animation: loop 80s -40s linear infinite;}
+.loop_wrap .txt:nth-child(even) {animation: loop2 80s linear infinite;}
+@keyframes loop {
+    from {transform: translateX(100%);}
+    to {transform: translateX(-100%);}
 }
 
-
+@keyframes loop2 {
+    from {transform: translateX(0);}
+    to {transform: translateX(-200%);}
+}
 
 
 @media (hover: hover) {
-    .content li.info .link a:hover span::before,
-    .btn a:hover::before {background: var(--bg-color2); transition: .2s;}
+    main .link a:hover span {width: 100px; height: 100px;}
+
+
+    .btn a:hover {width: 80px; height: 80px;}
 }
 
-@media (max-width: 1200px) {
-    .content li.thum,
-    .content li.info {width: 100%; text-align: center;}
-    .cate,
-    .content li.info {justify-content: center;}
-    .btn a {width: 60px; height: 60px; border-radius: 10px;}
-    .btn a.prev {left: 3vw; top: calc(50% - 30px);}
-    .btn a.next {right: 3vw; top: calc(50% - 30px);}
-}
 
 @media (max-width: 768px) {
-    .content, .img {padding: 0;}
-    .content li.info .link a span {width: 60px; height: 60px;}
+    .desc .txt ul {padding: 3vw;}
 
-    .btn a {width: 40px; height: 40px;}
-    .btn a.prev,
-    .btn a.next {top: calc(50% - 20px);}
 
+    .btn a.home {bottom: 5vw; left: 5vw;}
+    .btn a.scrolltop {bottom: 5vw; right:5vw;}
+    .btn a {width: 45px; height: 45px;}
 }

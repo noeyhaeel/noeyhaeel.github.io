@@ -1,3 +1,4 @@
+// 홈페이지 버튼
 var link = document.querySelectorAll(".hover_link");
 var animateit = function (e) {
     var hover = this.querySelector(".hover");
@@ -17,17 +18,8 @@ var animateit = function (e) {
 link.forEach((t) => t.addEventListener("mousemove", animateit));
 link.forEach((t) => t.addEventListener("mouseleave", animateit));
 
-// window.onscroll = function () {
-//     var ele = document.getElementById('pageBtn');
-//     var distanceScrolled = document.documentElement.scrollTop;
-//     if (distanceScrolled > 300) {
-//         ele.classList.add('on');
-//     } else {
-//         ele.classList.remove('on');
-//     }
-// }
 
-
+// 다크모드
 var css = document.querySelector("#css-link");
 var darkModeYn = localStorage["darkMode"];
 
@@ -49,4 +41,20 @@ function changeMode(){
     }
 
     location.reload(); // 웹페이지 새로고침
+}
+
+
+
+// 스크롤
+window.onscroll = function() {
+    var scrollButton = document.getElementById("pageBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.opacity = "1";
+    } else {
+        scrollButton.style.opacity = "0";
+    }
+};
+
+document.querySelector('.scrolltop').onclick = function() {
+    window.scrollTo(0, 0);
 }
