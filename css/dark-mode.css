@@ -6,7 +6,8 @@
     --bg-color3: #36363c;
     --border-color: #7f7f7f;
     --color: #fdfdff;
-    --point-color: #4d76ff;
+    --point-color: #6387ff;
+    --point-color2: #b69b50;
 }
 
 .switch__slider::before {transform: translate(1.6rem, -50%);}
