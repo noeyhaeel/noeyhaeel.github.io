@@ -14,16 +14,16 @@ body {scroll-behavior: smooth; font-family: pretendard, sans-serif; color: var(-
 
 
 header {padding: 2vw 10vw;  display: flex; justify-content: space-between; width: 100%; position: relative; z-index: 99;}
-header .logo a {color: var(--color); font-size: 1.75rem; font-weight: 700;} 
+header .logo {width: 20vw; color: var(--color); font-size: 1.75rem; font-weight: 700;}
 header ul.nav {display: flex; align-items: center; gap: 4vh;}
 header ul.nav li a {color: var(--color); font-size: 1.125rem; font-weight: 500; opacity: .5; transition: .2s linear; position: relative; overflow: hidden; display: block; width: 55px; height: 18px; text-align: center;} 
-header ul.nav li a span {display: flex; align-items: flex-end; justify-content: flex-end; width: 100%; height: 100%; position: absolute; transition: .2s linear; font-size: 1.25rem;}
+header ul.nav li a span {display: flex; align-items: flex-end; justify-content: center; width: 100%; height: 100%; position: absolute; transition: .2s linear; font-size: 1.25rem;}
 header ul.nav li a span.default {top: 0;}
 header ul.nav li a span.hover {top: 20px;}
 header ul.nav li a.on {opacity: 1; transition: 0.2s linear;}
 
 
-.switch {position: relative; display: inline-block; width: 3.8rem; height: 1.8rem;}
+.switch {position: relative; display: inline-block; width: 3.8rem; height: 1.8rem; margin-left: calc(20vw - 3.8rem);}
 .switch__input {opacity: 0; width: 0; height: 0;}
 .switch__slider {position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 1rem; background: var(--bg-color2); cursor: pointer;}
 .switch__slider::before {content: ""; position: absolute; left: 0.4rem; top: 50%;  transform: translateY(-50%); height: 1.3rem; width: 1.3rem; border-radius: 50%; background: var(--point-color);}

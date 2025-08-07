@@ -1,97 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eaahxn::portfolio</title>
-    <meta property="og:title" content="eaahxn::portfolio">
-    <meta property="og:description" content="frontend developer and designer">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="3600">
-    <meta property="og:image:height" content="1890">
-    <meta property="og:image" content="/img/opengraph.png">
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
-    <link rel="manifest" href="/img/fav/site.webmanifest">
-    <link rel="mask-icon" href="/img/fav/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- //favicon -->
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/light-mode.css" id="css-link">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
-            <ul class="nav">
-                <li><a href="/index.html"><span class="default">work</span><span class="hover">work</span></a></li>
-                <li><a href="/about.html" class="on"><span class="default">about</span><span class="hover">about</span></a></li>
-            </ul>
-            <label class="switch">
-                <input class="switch__input" type="checkbox">
-                <span class="switch__slider" onclick="changeMode();"></span>
-            </label>
-        </header>
-        <section>
-            <div class="box">
-                <h4 class="tit">🖐Hello</h4>
-                <span>
-                    안녕하세요. 코딩하는 디자이너 이아현입니다.<br>
-                    (<b>Simple</b>) 간결한 코드를 추구합니다. 웹 표준을 준수하며 구조화 된 마크업으로 개발에 용이하도록 늘 고민합니다.<br>
-                    문제 발생 시 구글링을 통해 유연하게 대처하며 html과 css를 깊이 이해하고 있습니다.<br>
-                    (<b>Minmal</b>) 미니멀한 디자인을 추구합니다. 심미성과 사용성, 두 요소의 균형을 늘 생각합니다.
-                </span>
-            </div>
-            <div class="box">
-                <h4 class="tit">🚗Skills</h4>
-                <span>
-                    HTML . CSS . JAVAScript . JQuery <br>
-                    Figma . Photoshop . Illustrator
-                </span>
-            </div>
-            <div class="box">
-                <h4 class="tit">✨Certificate</h4>
-                <span>웹디자인기능사. GTQi 1급. GTQ 1급</span>
-            </div>
-            <div class="box">
-                <h4 class="tit">👓Experience</h4>
-                <ul class="experience">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A-HYEON::Portfolio</title>
+        <meta property="og:title" content="eaahxn::portfolio" />
+        <meta property="og:description" content="frontend developer and designer" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="3600" />
+        <meta property="og:image:height" content="1890" />
+        <meta property="og:image" content="/img/opengraph.png" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png" />
+        <link rel="manifest" href="/img/fav/site.webmanifest" />
+        <link rel="mask-icon" href="/img/fav/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- //favicon -->
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/light-mode.css" id="css-link" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h3 class="logo">A-HYEON</h3>
+                <ul class="nav">
                     <li>
-                        <span class="date">에스이코리아<small>2022.03 - Now</small></span>
-                        <span>
-                            다양한 SI 프로젝트에 참여해 UI/UX를 기획하고 디자인 및 마크업 개발을 담당하고 있습니다.<br>
-                            또 홈페이지 운영을 위한 유지보수 업무 진행을 함께 하고있습니다.
-                        </span>
+                        <a href="/index.html">
+                            <span class="default">work</span>
+                            <span class="hover">work</span>
+                        </a>
                     </li>
                     <li>
-                        <span class="date">아이티팩토리<small>2021.08 - 2022.02</small></span>
-                        <span>
-                            스마트 HACCP 솔루션의 UI/UX를 기획하고 마크업 개발을 담당했습니다.<br>
-                            개발팀과 함께 검토하여 UI/UX의 사용성을 개선하였고, 마케팅에 필요한 디자인물도 산출하였습니다.
-                        </span>
-                    </li>
-                    <li>
-                        <span class="date">플로우<small>2020.11 - 2021.07</small></span>
-                        <span>
-                            카페24, 그누보드를 기반으로 한 홈페이지를 기획하고 마크업 개발을 담당했습니다.<br>
-                            쇼핑몰이나 기업 홈페이지를 위주로 작업하였고, 그에 필요한 상세페이지, 썸네일, 배너, 카드뉴스 제작을 하였습니다.
-                        </span>
+                        <a href="/about.html" class="on">
+                            <span class="default">about</span>
+                            <span class="hover">about</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <div class="blob_wrap">
-            <div class="blob"></div>
+                <label class="switch">
+                    <input class="switch__input" type="checkbox" />
+                    <span class="switch__slider" onclick="changeMode();"></span>
+                </label>
+            </header>
+            <section>
+                <div class="box">
+                    <h4 class="tit">🖐Hello</h4>
+                    <span>
+                        안녕하세요. 코딩하는 디자이너 이아현입니다.
+                        <br />
+                        (
+                        <b>Simple</b>
+                        ) 간결한 코드를 추구합니다. 웹 표준을 준수하며 구조화 된 마크업으로 개발에 용이하도록 늘 고민합니다.
+                        <br />
+                        문제 발생 시 구글링을 통해 유연하게 대처하며 html과 css를 깊이 이해하고 있습니다.
+                        <br />
+                        (
+                        <b>Minmal</b>
+                        ) 미니멀한 디자인을 추구합니다. 심미성과 사용성, 두 요소의 균형을 늘 생각합니다.
+                    </span>
+                </div>
+                <div class="box">
+                    <h4 class="tit">🚗Skills</h4>
+                    <span>
+                        HTML . CSS . JAVAScript . JQuery
+                        <br />
+                        Figma . Photoshop . Illustrator
+                    </span>
+                </div>
+                <div class="box">
+                    <h4 class="tit">✨Certificate</h4>
+                    <span>웹디자인기능사. GTQi 1급. GTQ 1급</span>
+                </div>
+                <div class="box">
+                    <h4 class="tit">👓Experience</h4>
+                    <ul class="experience">
+                        <li>
+                            <span class="date">
+                                에스이코리아
+                                <small>2022.03 - Now</small>
+                            </span>
+                            <span>
+                                다양한 SI 프로젝트에 참여해 UI/UX를 기획하고 디자인 및 웹접근성에 준수한 마크업 개발을 담당하고 있습니다.
+                                <br />
+                                또 홈페이지 운영을 위한 유지보수 업무 진행을 함께 하고있습니다.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="date">
+                                아이티팩토리
+                                <small>2021.08 - 2022.02</small>
+                            </span>
+                            <span>
+                                스마트 HACCP 솔루션의 UI/UX를 기획하고 마크업 개발을 담당했습니다.
+                                <br />
+                                개발팀과 함께 검토하여 UI/UX의 사용성을 개선하였고, 마케팅에 필요한 디자인물도 산출하였습니다.
+                            </span>
+                        </li>
+                        <li>
+                            <span class="date">
+                                플로우
+                                <small>2020.11 - 2021.07</small>
+                            </span>
+                            <span>
+                                카페24, 그누보드를 기반으로 한 홈페이지를 기획하고 마크업 개발을 담당했습니다.
+                                <br />
+                                쇼핑몰이나 기업 홈페이지를 위주로 작업하였고, 그에 필요한 상세페이지, 썸네일, 배너, 카드뉴스 제작을 하였습니다.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </div>
 
-    <div class="overlay"></div>
+        <footer>
+            <p class="copy">©︎ 2025 A-HYEON Portfolio</p>
+        </footer>
 
-    <script src="/js/script.js"></script>
-</body>
+        <script src="/js/script.js"></script>
+    </body>
 </html>

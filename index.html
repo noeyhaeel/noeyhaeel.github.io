@@ -1,132 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eaahxn::portfolio</title>
-    <meta property="og:title" content="eaahxn::portfolio">
-    <meta property="og:description" content="frontend developer and designer">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="3600">
-    <meta property="og:image:height" content="1890">
-    <meta property="og:image" content="/img/opengraph.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
-    <link rel="manifest" href="/img/fav/site.webmanifest">
-    <link rel="mask-icon" href="/img/fav/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A-HYEON::Portfolio</title>
+        <meta property="og:title" content="A-HYEON::Portfolio" />
+        <meta property="og:description" content="frontend developer and designer" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="3600" />
+        <meta property="og:image:height" content="1890" />
+        <meta property="og:image" content="/img/opengraph.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png" />
+        <link rel="manifest" href="/img/fav/site.webmanifest" />
+        <link rel="mask-icon" href="/img/fav/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/light-mode.css" id="css-link">
-</head>
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/light-mode.css" id="css-link" />
+    </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h3 class="logo"><a href="/index.html">eaahxn.</a></h3>
-            <ul class="nav">
-                <li><a href="/index.html" class="on"><span class="default">work</span><span
-                            class="hover">work</span></a>
-                </li>
-                <li><a href="/about.html"><span class="default">about</span><span class="hover">about</span></a></li>
-            </ul>
-            <label class="switch">
-                <input class="switch__input" type="checkbox">
-                <span class="switch__slider" onclick="changeMode();"></span>
-            </label>
-        </header>
+    <body>
+        <div class="container">
+            <header>
+                <h3 class="logo">A-HYEON</h3>
+                <ul class="nav">
+                    <li>
+                        <a href="/index.html" class="on">
+                            <span class="default">work</span>
+                            <span class="hover">work</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about.html">
+                            <span class="default">about</span>
+                            <span class="hover">about</span>
+                        </a>
+                    </li>
+                </ul>
+                <label class="switch">
+                    <input class="switch__input" type="checkbox" />
+                    <span class="switch__slider" onclick="changeMode();"></span>
+                </label>
+            </header>
 
-        <section id="work">
-            <a href="/work/sbc.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">대구대학교 반도체부트캠프사업단</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/sbc/thum.jpg" alt="한국뇌연구원 AI실증사업단" class="hover">
-            </a>
-            <a href="/work/dtx.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">한국뇌연구원 AI실증사업단</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/dtx/thum.jpg" alt="한국뇌연구원 AI실증사업단" class="hover">
-            </a>
-            <a href="/work/bnh.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">B&H 솔루션</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/bnh/thum.jpg" alt="대구섬유박물관" class="hover">
-            </a>
-            <a href="/work/dtmuseum.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">대구섬유박물관</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/dtmuseum/thum.jpg" alt="대구섬유박물관" class="hover">
-            </a>
-            <a href="/work/dgfca.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">대구문화예술진흥원</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/dgfca/thum.jpg" alt="대구문화예술진흥원" class="hover">
-            </a>
-            <a href="/work/dongguk.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">동국대학교 / 동국대학교 CMS</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/dongguk/thum.jpg" alt="동국대학교" class="hover">
-            </a>
-            <a href="/work/donggukcampus.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">동국대학교 캠퍼스맵</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/donggukcampus/thum.jpg" alt="동국대학교 캠퍼스맵" class="hover">
-            </a>
-            <a href="/work/wiseipsi.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">동국대학교WISE 입학안내</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/wiseipsi/thum.jpg" alt="동국대학교WISE 입학안내" class="hover">
-            </a>
-            <a href="/work/doubleM.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">더블엠테크</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/doublemtech/thum.jpg" alt="더블엠테크" class="hover">
-            </a>
-            <a href="/work/chilsung.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">칠성피엘아이</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/chilsungpli/thum.jpg" alt="칠성피엘아이" class="hover">
-            </a>
-            <a href="/work/daeguearly.html" class="hover_link">
-                <ul class="info">
-                    <li class="tit">대구대학교 온라인 예비대학</li>
-                    <li class="cate">웹사이트</li>
-                </ul>
-                <img src="/img/daeguearly/thum.jpg" alt="대구대학교 온라인 예비대학" class="hover">
-            </a>
-        </section>
-    </div>
-    
+            <section id="work">
+                <a href="/work/sbc.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">대구대학교 반도체부트캠프사업단</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/sbc/thum.jpg" alt="한국뇌연구원 AI실증사업단" class="hover" />
+                </a>
+                <a href="/work/dtx.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">한국뇌연구원 AI실증사업단</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/dtx/thum.jpg" alt="한국뇌연구원 AI실증사업단" class="hover" />
+                </a>
+                <a href="/work/bnh.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">B&H 솔루션</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/bnh/thum.jpg" alt="대구섬유박물관" class="hover" />
+                </a>
+                <a href="/work/dtmuseum.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">대구섬유박물관</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/dtmuseum/thum.jpg" alt="대구섬유박물관" class="hover" />
+                </a>
+                <a href="/work/dgfca.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">대구문화예술진흥원</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/dgfca/thum.jpg" alt="대구문화예술진흥원" class="hover" />
+                </a>
+                <a href="/work/dongguk.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">동국대학교 / 동국대학교 CMS</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/dongguk/thum.jpg" alt="동국대학교" class="hover" />
+                </a>
+                <a href="/work/donggukcampus.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">동국대학교 캠퍼스맵</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/donggukcampus/thum.jpg" alt="동국대학교 캠퍼스맵" class="hover" />
+                </a>
+                <a href="/work/wiseipsi.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">동국대학교WISE 입학안내</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/wiseipsi/thum.jpg" alt="동국대학교WISE 입학안내" class="hover" />
+                </a>
+                <a href="/work/doubleM.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">더블엠테크</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/doublemtech/thum.jpg" alt="더블엠테크" class="hover" />
+                </a>
+                <a href="/work/chilsung.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">칠성피엘아이</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/chilsungpli/thum.jpg" alt="칠성피엘아이" class="hover" />
+                </a>
+                <a href="/work/daeguearly.html" class="hover_link">
+                    <ul class="info">
+                        <li class="tit">대구대학교 온라인 예비대학</li>
+                        <li class="cate">웹사이트</li>
+                    </ul>
+                    <img src="/img/daeguearly/thum.jpg" alt="대구대학교 온라인 예비대학" class="hover" />
+                </a>
+            </section>
+        </div>
 
-    <footer>
-        <p class="copy">©︎ 2025 eaahxn Portfolio</p>
-    </footer>
+        <footer>
+            <p class="copy">©︎ 2025 A-HYEON Portfolio</p>
+        </footer>
 
-
-    <script src="/js/script.js"></script>
-</body>
+        <script src="/js/script.js"></script>
+    </body>
 </html>
